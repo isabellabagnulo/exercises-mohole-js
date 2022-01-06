@@ -9,9 +9,15 @@
   
 */
 
-const number = 2
+const p = document.querySelector("#paragraph")
 
-for (let i = 1; i >= 10; i++) {
-  const mult = number * i
-  console.log(`${number} * ${i} = ${mult}`)
+function multiplicationTable() {
+  const number = document.querySelector("input").value
+  const table = []
+  for (let i = 1; i <= 10; i++) {
+    const mult = number * i
+    table.push(`${number} * ${i} = ${mult}`)
+  }
+  console.log(table)
+  p.innerHTML = table
 }

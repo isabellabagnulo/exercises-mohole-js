@@ -19,3 +19,33 @@
 
   
 */
+
+const random = Math.floor(Math.random() * (100 - 1) + 1)
+
+const p = document.querySelector("#paragraph")
+const button = document.querySelector("button")
+const prandom = document.querySelector("#random")
+
+button.addEventListener("click", () => {
+  prandom.innerHTML = random
+})
+
+function whoGetCloser() {
+  const player1 = document.querySelector("#player1").value
+  const player2 = document.querySelector("#player2").value
+  if (player1 == random) {
+    p.innerHTML = `Player 1 ha indovinato`
+  } else if (player2 == random) {
+    p.innerHTML = `Player 2 ha indovinato`
+  } else {
+    const a = Math.abs(random - player1)
+    const b = Math.abs(random - player2)
+    if (a < b) {
+      p.innerHTML = `Nessuno dei due ha indovinato, ma il Player 1 ci è andato più vicino`
+    } else if (a > b) {
+      p.innerHTML = `Nessuno dei due ha indovinato, ma il Player 2 ci è andato più vicino`
+    } else if (a == b) {
+      p.innerHTML = `Nessuno dei due ha indovinato, ed entrambi avete raggiunto la stessa vicinanza`
+    }
+  }
+}

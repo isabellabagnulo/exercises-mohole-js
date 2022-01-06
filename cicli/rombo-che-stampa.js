@@ -16,3 +16,12 @@
   
   
 */
+
+const numberX = 5
+
+for (let i = 1; i <= numberX - 2; i++) {
+  console.log("X".repeat(i * 2 - 1))
+}
+for (let i = numberX - 3; i >= 1; i--) {
+  console.log("X".repeat(i * 2 - 1))
+}

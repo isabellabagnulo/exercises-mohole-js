@@ -11,14 +11,14 @@
 
 */
 
-const currentYear = 2021
-const birthYear = 1997
+const p = document.querySelector("#paragraph")
 
-const age = currentYear - birthYear
-const ageUpToHundred = 100 - age
+function ageCounter() {
+  const birthYear = document.querySelector("input").value
+  const currentYear = 2021
 
-console.log(age)
-console.log(ageUpToHundred)
-console.log(
-  `io ho ${age} anni e mi mancano ${ageUpToHundred} anni per arrivare a 100 anni`
-)
+  const age = currentYear - birthYear
+  const ageUpToHundred = 100 - age
+
+  p.innerHTML = `io ho ${age} anni e mi mancano ${ageUpToHundred} anni per arrivare a 100 anni`
+}

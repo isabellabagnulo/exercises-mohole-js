@@ -16,13 +16,12 @@
   utilizza Math.ceil (arrotonda sempre all'intero superiore).
 */
 
-const cats = 44
-const catsxLine = 6
-const lines = Math.ceil(cats / catsxLine)
-const missingCats = lines * catsxLine - cats
+const p = document.querySelector("#paragraph")
 
-console.log(lines)
-console.log(missingCats)
-console.log(
-  `${cats} gatti, in fila per ${catsxLine}, formano ${lines} file, e in ultima fila ci sono ${missingCats} gatti mancanti`
-)
+function catsCounter() {
+  const cats = document.querySelector("#numberofcats").value
+  const catsxLine = document.querySelector("#numberofline").value
+  const lines = Math.ceil(cats / catsxLine)
+  const missingCats = lines * catsxLine - cats
+  p.innerHTML = `${cats} gatti, in fila per ${catsxLine}, formano ${lines} file, e in ultima fila ci sono ${missingCats} gatti mancanti`
+}

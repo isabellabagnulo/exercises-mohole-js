@@ -11,37 +11,29 @@
   In un'ora ci sono 60 minuti, in un minuto 60 secondi. Quindi quanti secondi ci sono in un'ora?
 */
 
-let residualSeconds = 12560
+const p = document.querySelector("#paragraph")
 
-const secondsForMinute = 60
-const secondsForHour = 60 * secondsForMinute
+function timeCounter() {
+  let residualSeconds = document.querySelector("input").value
 
-// let's start - calcoliamo quante ore
-const hours = residualSeconds / secondsForHour
-residualSeconds = residualSeconds % secondsForHour
+  const secondsForMinute = 60
+  const secondsForHour = 60 * secondsForMinute
 
-// vediamo quanti secondi (in h) ci restano
-console.log(residualSeconds)
+  // calcoliamo quante ore
+  const hours = residualSeconds / secondsForHour
+  residualSeconds = residualSeconds % secondsForHour
 
-// calcoliamo quanti minuti sui secondi rimanenti
-const minutes = residualSeconds / secondsForMinute
-residualSeconds = residualSeconds % secondsForMinute
+  // calcoliamo quanti minuti sui secondi rimanenti
+  const minutes = residualSeconds / secondsForMinute
+  residualSeconds = residualSeconds % secondsForMinute
 
-// vediamo i secondi rimanenti
-console.log(residualSeconds)
+  // in questo caso l'operatore modulo non serve perchè dovremmo avere un valore già sotto i 60
+  const seconds = residualSeconds
 
-// in questo caso l'operatore modulo non serve perchè dovremmo avere un valore già sotto i 60
-const seconds = residualSeconds
-
-console.log(`hours: ${hours}`)
-console.log(`minutes: ${minutes}`)
-console.log(`seconds: ${seconds}`)
-
-console.log(
-  `${Math.floor(hours)} ore, ${Math.floor(
+  p.innerHTML = `${Math.floor(hours)} ore, ${Math.floor(
     minutes
   )} minuti e ${seconds} secondi.`
-)
+}
 
 // Oggetto Math
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math

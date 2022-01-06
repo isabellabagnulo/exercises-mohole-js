@@ -16,6 +16,25 @@ for (let i = 0; i < numbers.length; i++) {
 }
 const average = sum / numbers.length
 
+console.log(sum)
+console.log(average)
+
 console.log(
   `la somma dei numeri ${numbers} è di ${sum}, mentre la media è di ${average}`
 )
+
+// const p = document.querySelector("#paragraph")
+// let sum = 0
+
+// function average() {
+//   let numbers = document.querySelector("input").value.toString().split(",")
+//   const parsed = parseInt(numbers)
+//   console.log(parsed)
+//   for (let i = 0; i < numbers.length; i++) {
+//     sum = sum + numbers[i]
+//   }
+//   console.log(numbers)
+//   const average = sum / numbers.length
+
+//   p.innerHTML = `la somma dei numeri ${numbers} è di ${sum}, mentre la media è di ${average}`
+// }

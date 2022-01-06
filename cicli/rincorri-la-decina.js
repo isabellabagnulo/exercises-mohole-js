@@ -17,3 +17,16 @@
   Consiglio:
   Per andare a capo usa '\n'.
 */
+
+const p = document.querySelector("#paragraph")
+
+const numbers = []
+
+for (let i = 1; i <= 100; i++) {
+  numbers.push(i)
+  if (i % 10 === 0) {
+    numbers.push("\n")
+  }
+}
+
+p.innerHTML = numbers

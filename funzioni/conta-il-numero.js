@@ -13,10 +13,21 @@
   
 */
 
-number = 134
+const p = document.querySelector("#paragraph")
 
-function countNumber(n) {
-  console.log(n.lenght())
+function countNumber() {
+  const val = document.querySelector("input").value
+  if ((val < 0) | (val > 9999)) {
+    p.innerHTML = `Inserisci una cifra compresa tra 0 e 9999`
+  } else {
+    p.innerHTML = val.length
+  }
 }
 
-countNumber(number)
+// number = 134
+
+// function countNumber(number) {
+//   return number.toString().length
+// }
+
+// console.log(countNumber(number))
