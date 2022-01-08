@@ -23,10 +23,19 @@ const p = document.querySelector("#paragraph")
 const numbers = []
 
 for (let i = 1; i <= 100; i++) {
-  numbers.push(i)
-  if (i % 10 === 0) {
-    numbers.push("\n")
+  if (i % 10 == 0) {
+    numbers.push(`${i}\n`)
+  } else {
+    numbers.push(`${i}`)
   }
 }
+// const array = numbers.replace(/(?:\r\n|\r|\n)/g, "<br>")
 
 p.innerHTML = numbers
+console.log(numbers)
+
+// if (i % 10 == 0) {
+//   p.innerHTML = `\n`
+// } else {
+//   p.innerHTML = numbers
+// }

@@ -1,28 +1,28 @@
 ## Tipi di dato primari (stringhe e numeri)
 * **Facili**
-  * Somma e media
-  * Quanti anni ha?
-  * Conta il tempo
-  * Gatti in fila
+  <!-- * Somma e media -->
+  <!-- * Quanti anni ha? -->
+  <!-- * Conta il tempo -->
+  <!-- * Gatti in fila -->
 
 ## Condizioni (if e switch)
 * **Facili**
-  * Pari o Dispari?
-  * Maggiore e minore
-  * Menu dei dolci
-  * Conta le cifre
+  <!-- * Pari o Dispari? -->
+  <!-- * Maggiore e minore -->
+  <!-- * Menu dei dolci -->
+  <!-- * Conta le cifre -->
 * **Medi**
-  * Caldo o freddo?
-  * Chi l'azzecca?
-  * Che giorno è oggi?
+  <!-- * Caldo o freddo? -->
+  <!-- * Chi l'azzecca? -->
+  <!-- * Che giorno è oggi? -->
 * **Difficili**
-  * Fai il professore
-  * La calcolatrice
+  <!-- * Fai il professore -->
+  <!-- * La calcolatrice -->
 
 ## Cicli (for, while e do-while)
 * **Facili**
   * Rincorri la decina
-  * Ti ricordi le tabelline?
+  <!-- * Ti ricordi le tabelline? -->
 * **Medi**
   * Vinci tu!
   * Il calendario mediocre
@@ -31,8 +31,8 @@
 
 ## Array
 * **Facili**
-  * Invertimi
-  * Tanti numeri
+  <!-- * Invertimi -->
+  <!-- * Tanti numeri -->
 * **Medi**
   * La tombola magica
   * Operazioni tra array
@@ -52,13 +52,13 @@
 
 ## Funzioni
 * **Facili**
-  * La funzione banale
-  * Primo e ultimo
-  * La difficoltà del fattoriale
-  * Tick, tack, timer!
+  <!-- * La funzione banale -->
+  <!-- * Primo e ultimo -->
+  <!-- * La difficoltà del fattoriale -->
+  <!-- * Tick, tack, timer! -->
   * Indovina il giorno
 * **Medi**
-  * Conta il numero
+  <!-- * Conta il numero -->
   * La bellezza della casualità
   * La funzione che sembra difficile
   * Il genio delle date

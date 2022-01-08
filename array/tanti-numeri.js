@@ -12,3 +12,23 @@
 
   
 */
+
+const p = document.querySelector("#paragraph")
+
+function average() {
+  let sum = 0
+  const numbers = document.querySelector("input").value.toString().split(",")
+  for (let i = 0; i < numbers.length; i++) {
+    sum += parseInt(numbers[i])
+  }
+  const average = sum / numbers.length
+
+  const belowAverage = []
+  for (let j = 0; j < numbers.length; j++) {
+    if (numbers[j] < average) {
+      belowAverage.push(numbers[j])
+    }
+  }
+
+  p.innerHTML = `la media dei numeri ${numbers} è di ${average}. I numeri minori di ${average} sono ${belowAverage}`
+}

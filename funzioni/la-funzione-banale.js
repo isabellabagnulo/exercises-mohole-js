@@ -16,3 +16,15 @@
     
   
 */
+
+const p = document.querySelector("#paragraph")
+
+function equality() {
+  const a = document.querySelector("#numberA").value
+  const b = document.querySelector("#numberB").value
+  if (a === b) {
+    p.innerHTML = `i numeri ${a} e ${b} sono uguali`
+  } else {
+    p.innerHTML = `i numeri ${a} e ${b} sono diversi`
+  }
+}

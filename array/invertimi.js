@@ -15,3 +15,13 @@
 
   
 */
+
+const p = document.querySelector("#paragraph")
+
+function generateArray() {
+  const n = document.querySelector("input").value
+  const newArray = Array.from({ length: n }, () =>
+    Math.floor(Math.random() * (100 - 1) + 1)
+  )
+  p.innerHTML = `array ottenuto [${newArray}] array invertito [${newArray.reverse()}]`
+}

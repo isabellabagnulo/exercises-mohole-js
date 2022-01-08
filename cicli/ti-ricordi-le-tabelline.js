@@ -18,6 +18,6 @@ function multiplicationTable() {
     const mult = number * i
     table.push(`${number} * ${i} = ${mult}`)
   }
-  console.log(table)
-  p.innerHTML = table
+  const array = table.join("\n").replace(/(?:\r\n|\r|\n)/g, "<br>")
+  p.innerHTML = array
 }

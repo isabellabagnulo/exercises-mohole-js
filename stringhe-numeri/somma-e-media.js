@@ -25,10 +25,10 @@
 // )
 
 const p = document.querySelector("#paragraph")
-let sum = 0
 
 function average() {
-  let numbers = document.querySelector("input").value.toString().split(",")
+  let sum = 0
+  const numbers = document.querySelector("input").value.toString().split(",")
   for (let i = 0; i < numbers.length; i++) {
     sum += parseInt(numbers[i])
   }

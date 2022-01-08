@@ -19,3 +19,29 @@
 
   
 */
+
+const p = document.querySelector("#paragraph")
+const button = document.querySelector("button")
+const prandom = document.querySelector("#random")
+
+function tombola() {
+  const bingoFolder = document.querySelector("input").value.split(",")
+  const randomNumbers = Array.from({ length: 10 }, () =>
+    Math.floor(Math.random() * (90 - 1) + 1)
+  )
+  button.addEventListener("click", () => {
+    prandom.innerHTML = randomNumbers
+  })
+
+  let point = 0
+  for (let i = 0; i <= bingoFolder.length; i++) {
+    for (let j = 0; j <= randomNumbers.length; j++) {
+      if (bingoFolder[i] == randomNumbers[j]) {
+        point = +1
+      } else {
+        console.log("hai perso")
+      }
+    }
+  }
+  p.innerHTML = `i numeri che hai lanciato sono ${bingoFolder}, i numeri estratti dalla tombola sono ${randomNumbers}, quindi hai totalizzanto ${point} punti`
+}

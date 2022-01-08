@@ -12,3 +12,14 @@
 
   
 */
+
+const p = document.querySelector("#paragraph")
+
+function factorial() {
+  const n = document.querySelector("input").value
+  let result = 1
+  for (let i = n; i > 0; i--) {
+    result *= i
+  }
+  p.innerHTML = `il risultato del fattoriale di ${n} è di ${result}`
+}

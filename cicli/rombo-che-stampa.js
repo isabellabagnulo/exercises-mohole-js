@@ -16,12 +16,18 @@
   
   
 */
+const p = document.querySelector("#paragraph")
 
-const numberX = 5
+function rhombus() {
+  const draw = []
+  const numberX = document.querySelector("input").value
 
-for (let i = 1; i <= numberX - 2; i++) {
-  console.log("X".repeat(i * 2 - 1))
-}
-for (let i = numberX - 3; i >= 1; i--) {
-  console.log("X".repeat(i * 2 - 1))
+  for (let i = 1; i <= numberX - 2; i++) {
+    draw.push("X".repeat(i * 2 - 1))
+  }
+  for (let i = numberX - 3; i >= 1; i--) {
+    draw.push("X".repeat(i * 2 - 1))
+  }
+  const array = draw.join("\n").replace(/(?:\r\n|\r|\n)/g, "<br>")
+  p.innerHTML = array
 }

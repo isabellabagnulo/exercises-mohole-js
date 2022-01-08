@@ -13,3 +13,12 @@
 
   
 */
+
+const p = document.querySelector("#paragraph")
+
+function minMax() {
+  const numbers = document.querySelector("input").value.toString().split(",")
+  const maxNumber = Math.max(...numbers)
+  const minNumber = Math.min(...numbers)
+  p.innerHTML = `tra i numeri ${numbers}, il maggiore è ${maxNumber} e il minore è ${minNumber}`
+}
