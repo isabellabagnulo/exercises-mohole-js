@@ -18,3 +18,32 @@
 
   
 */
+
+const p = document.querySelector("#paragraph")
+
+function voteCalculation() {
+  const vote = document.querySelector("input").value
+  switch (true) {
+    case vote == 30:
+      p.innerHTML = `eccellente`
+      break
+    case 26 < vote && vote <= 29:
+      p.innerHTML = `ottimo`
+      break
+    case 23 < vote && vote <= 26:
+      p.innerHTML = `distinto`
+      break
+    case 20 < vote && vote <= 23:
+      p.innerHTML = `buono`
+      break
+    case 17 < vote && vote <= 20:
+      p.innerHTML = `sufficiente`
+      break
+    case 0 < vote && vote <= 17:
+      p.innerHTML = `insufficiente`
+      break
+    default:
+      p.innerHTML = `questo voto non esiste`
+      break
+  }
+}

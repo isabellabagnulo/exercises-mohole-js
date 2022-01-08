@@ -21,3 +21,26 @@
 
   
 */
+
+const p = document.querySelector("#paragraph")
+
+function chooseDessert() {
+  const val = document.querySelector("input").value
+  switch (val) {
+    case "1":
+      p.innerHTML = `Hai scelto il dolce Tiramisù`
+      break
+    case "2":
+      p.innerHTML = `Hai scelto il dolce Torta della nonna`
+      break
+    case "3":
+      p.innerHTML = `Hai scelto il dolce Cheesecake alla nutella`
+      break
+    case "4":
+      p.innerHTML = `Hai scelto il dolce Macedonia`
+      break
+    default:
+      p.innerHTML = `Dolce non disponibile`
+      break
+  }
+}

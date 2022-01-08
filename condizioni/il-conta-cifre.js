@@ -11,3 +11,14 @@
 
   
 */
+
+const p = document.querySelector("#paragraph")
+
+function countNumber() {
+  const val = document.querySelector("input").value
+  if ((val < 0) | (val > 9999)) {
+    p.innerHTML = `Inserisci una cifra compresa tra 0 e 9999`
+  } else {
+    p.innerHTML = `La cifra ${val} è composta da ${val.length} cifre`
+  }
+}

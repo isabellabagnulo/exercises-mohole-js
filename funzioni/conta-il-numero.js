@@ -20,7 +20,7 @@ function countNumber() {
   if ((val < 0) | (val > 9999)) {
     p.innerHTML = `Inserisci una cifra compresa tra 0 e 9999`
   } else {
-    p.innerHTML = val.length
+    p.innerHTML = `La cifra ${val} è composta da ${val.length} cifre`
   }
 }
 
